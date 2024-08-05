@@ -1,59 +1,60 @@
-.custom-navbar {
-    background-color: #bfd2d9; /* Color del header */
-}
-
-.navbar-toggler {
+/* Corrección del input de búsqueda */
+.input-group-text {
+    background: transparent;
     border: none;
-    background: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url('Img/Header/IconoMenu.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-}
-
-.navbar-brand img {
-    height: 60px;
-}
-
-.search-form {
-    width: 60%;
-    display: flex;
-    justify-content: center; /* Centra la barra de búsqueda horizontalmente */
-}
-
-.input-group {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos dentro del input-group */
+    padding-right: 5px; /* Ajuste del espacio para la lupa */
 }
 
 .search-input {
     border-radius: 20px;
     border: 3px solid #094797;
-    padding-left: 40px; /* Espacio para la lupa */
-    height: 30px; /* Ajusta la altura */
+    padding-left: 10px; /* Ajuste del padding a la izquierda */
+    height: 40px; /* Ajusta la altura */
     background: white;
-    position: relative;
+    width: 100%; /* Ocupa todo el ancho */
 }
 
-.input-group-text {
-    position: absolute;
-    left: 10px; /* Espacio desde el borde izquierdo del input */
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
+/* Ajuste del tamaño de la imagen dentro del input */
+.input-group-text img {
+    width: 20px;
+    height: 20px;
 }
 
-.btn-transparent {
-    background: transparent;
-    border: none;
-}
+@media (max-width: 992px) {
+    .search-form {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 
-.btn-transparent img {
-    height: 40px;
-    margin-right: 5px;
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Centrado del botón INGRESAR */
+    .btn-transparent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid #094797;
+        width: 80%;
+        margin: 1rem auto;
+    }
 }
