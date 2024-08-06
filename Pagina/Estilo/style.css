@@ -5,17 +5,23 @@
 header  {
     width: 100%;
     height: 150px;
-    background-color: aqua;
+    background-color:#bfd2d9;
 }
 
-main    {
+main   {
     width: 100%;
     height: 400px;
-    background-color: red;
-}
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://cadenacentro.com/wp-content/uploads/2021/11/f800x450-186650_238096_5050.jpg);
+}   
+  
 
 footer  {
+    
     width: 100%;
     height: 100px;
-    background-color: blue;
+    background-color:#003851
 }
+
