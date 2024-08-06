@@ -1,60 +1,102 @@
-/* Corrección del input de búsqueda */
-.input-group-text {
-    background: transparent;
+
+
+
+.custom-navbar {
+    background-color: #bfd2d9; /* Color del header */
+}
+
+.navbar-toggler {
     border: none;
-    padding-right: 5px; /* Ajuste del espacio para la lupa */
+    background: none;
+}
+Pagina\Img\Header\IconoMenu.png
+.navbar-toggler-icon {
+    background-image: url('Pagina\Img\Header\IconoMenu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Evita que los elementos se muevan a la siguiente línea */
+}
+
+.input-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro del input-group */
+    width: 70%;
+    flex-wrap: nowrap; /* Evita que los elementos se muevan a la siguiente línea */
 }
 
 .search-input {
     border-radius: 20px;
-    border: 3px solid #094797;
-    padding-left: 10px; /* Ajuste del padding a la izquierda */
+    border: 5px solid #094797;
+    padding-left: 40px; /* Espacio para la lupa */
     height: 40px; /* Ajusta la altura */
     background: white;
-    width: 100%; /* Ocupa todo el ancho */
+    position: relative;
+    width: 100%; /* Barra de búsqueda ocupa todo el ancho */
 }
 
-/* Ajuste del tamaño de la imagen dentro del input */
-.input-group-text img {
-    width: 20px;
+.input-group-text {
+    z-index: 1;
+    position: absolute;
+    left: 10px; /* Espacio desde el borde izquierdo del input */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+}
+
+.btn-transparent {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.btn-transparent img {
     height: 20px;
+    margin-left: 5px; /* Mueve la imagen a la derecha del texto */
 }
 
 @media (max-width: 992px) {
     .search-form {
         width: 100%;
         margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: nowrap; /* Asegura que los elementos se mantengan en una línea */
     }
 
     .navbar-collapse {
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Cambia la dirección del contenido colapsado a una fila */
+        justify-content: space-between;
         align-items: center;
+        flex-wrap: nowrap; /* Evita que los elementos se muevan a la siguiente línea */
     }
 
     .input-group {
-        width: 80%;
-        margin-bottom: 1rem;
+        width: 70%;
+        margin-bottom: 0;
+        flex-wrap: nowrap; /* Evita que los elementos se muevan a la siguiente línea */
     }
 
     .navbar-nav {
-        width: 100%;
         display: flex;
-        justify-content: center;
-    }
-
-    /* Centrado del botón INGRESAR */
-    .btn-transparent {
-        display: flex;
-        justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
-    hr {
-        border: 0;
-        border-top: 1px solid #094797;
-        width: 80%;
-        margin: 1rem auto;
+    .btn-transparent {
+        margin-bottom: 20px;
+        margin-left: 10px; /* Ajusta el espaciado en dispositivos pequeños */
     }
 }
