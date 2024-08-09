@@ -1,4 +1,14 @@
-footer  {
+*       {
     margin: 0;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
     background-color: #003851;
+}
+
+footer img {
+    width: 30%;
 }

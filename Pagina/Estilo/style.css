@@ -1,23 +1,31 @@
 *   {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 main   {
-    width: 100%;
-    height: 400px;
+    min-height: calc(100vh - 160px);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: contain;
+    background-position: center;
     background-image: url(https://cadenacentro.com/wp-content/uploads/2021/11/f800x450-186650_238096_5050.jpg);
 }   
-  
 
-footer  {
- 
-    width: 100%;
-    height: 100px;
-    background-color:#003851
-    i
+/*              Responsive                     */
+@media (max-width: 768px){
+    main {
+        min-height: calc(100vh - 120px); /* Ajusta si el header o footer es más pequeño en móviles */
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    
 }
-
+@media (min-width: 769px) {
+    main {
+        min-height: calc(100vh - 160px); /* Ajusta si el header o footer es más pequeño en pantallas más grandes */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

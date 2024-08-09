@@ -1,3 +1,5 @@
+
+
 .custom-navbar {
     background-color: #bfd2d9; /* Color del header */
 }
@@ -16,7 +18,7 @@ Pagina\Img\Header\IconoMenu.png
 }
 
 .navbar-brand img {
-    height: 60px;
+    height: 80px;
 }
 
 .search-form {
@@ -43,7 +45,7 @@ Pagina\Img\Header\IconoMenu.png
 .search-input {
     padding-left: 40px; /* Ajusta según sea necesario */
     border-radius: 20px;
-    border: 5px solid #094797;
+    border: 6px solid #094797;
     height: 40px; /* Ajusta según sea necesario */
 }
 
@@ -57,7 +59,6 @@ Pagina\Img\Header\IconoMenu.png
     z-index: 1;
 }
 
-
 .btn-transparent {
     background: transparent;
     border: none;
@@ -66,7 +67,7 @@ Pagina\Img\Header\IconoMenu.png
 }
 
 .btn-transparent img {
-    height: 20px;
+    height: 40px;
     margin-left: 5px; /* Mueve la imagen a la derecha del texto */
 }
 
