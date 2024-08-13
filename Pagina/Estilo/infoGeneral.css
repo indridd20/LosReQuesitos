@@ -1,0 +1,34 @@
+main {
+    display: flex; /* Usamos flexbox para colocar las secciones lado a lado */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    flex: 1; /* Las secciones ocuparán el mismo espacio disponible */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.left {
+    background-color: #8d9294; /* Color de fondo para la sección izquierda */
+}
+
+.right {
+    background-color: #7a8386; /* Color de fondo para la sección derecha */
+}
+
+.LogoH {
+    text-align: center;
+    opacity: 0,10;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Apilar las secciones verticalmente */
+    }
+}
