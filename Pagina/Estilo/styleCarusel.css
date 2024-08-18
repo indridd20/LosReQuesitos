@@ -29,8 +29,7 @@ body {
     display: block;
 }
 
-button {
-    position: absolute;
+button{
     top: 50%;
     width: 40px;
     height: 40px;
@@ -46,9 +45,11 @@ button {
 }
 
 .prev {
+    position: absolute;
     left: 10px;
 }
 
 .next {
+    position: absolute;
     right: 10px;
 }
