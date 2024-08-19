@@ -51,3 +51,31 @@ button  {
     border: 0;
 }
 /*------------------------------------------------*/
+
+
+.footer-container {
+    padding: 50px;
+    background-color: #002535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p       {
+    color: white;
+}
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espacio entre los elementos */
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-link img {
+    height: 40px; /* Ajusta el tamaño de los íconos */
+    vertical-align: middle;
+}
