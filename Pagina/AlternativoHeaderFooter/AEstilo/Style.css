@@ -16,17 +16,18 @@
 }
 
 .navbar-brand img {
+    margin-left: 50px;
     height: 100px;
 }
 
 .nav-link {
     margin-left: 90px;
-
+    font-size: 25px;
     color: #a5a5a5;
 }
 
 .search-form {
-    width: 300px;
+    width: 40%;
 }
 
 .search-input {

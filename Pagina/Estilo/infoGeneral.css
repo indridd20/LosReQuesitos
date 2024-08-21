@@ -14,6 +14,10 @@ section {
     box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
+footer  {
+    background-color: #003851;
+}
+
 .left {
     background-color: #8d9294; /* Color de fondo para la sección izquierda */
 }
