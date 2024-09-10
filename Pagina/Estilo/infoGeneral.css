@@ -14,21 +14,13 @@ section {
     box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
-footer  {
-    background-color: #003851;
-}
-
 .left {
-    background-color: #8d9294; /* Color de fondo para la sección izquierda */
+    background-color: #003851; /* Color de fondo para la sección izquierda */
 }
 
 .right {
-    background-color: #7a8386; /* Color de fondo para la sección derecha */
-}
-
-.LogoH {
-    text-align: center;
-    opacity: 0,10;
+    background-color: #003851; /* Color de fondo para la sección derecha */
+    color: antiquewhite;
 }
 
 @media (max-width: 768px) {
