@@ -1,3 +1,8 @@
+*   {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 .custom-navbar {
     background-color: #bfd2d9; /* Color del header */
 }
