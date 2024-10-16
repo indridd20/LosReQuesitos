@@ -7,7 +7,7 @@
 header  {
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 .custom-navbar {
     background-color: #bfd2d9; /* Color del header */

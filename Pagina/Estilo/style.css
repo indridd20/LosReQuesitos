@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -29,11 +29,16 @@ main::before {
 
 }
 
-main * {
+main  {
     position: relative;
     z-index: 2;
 }
 
+.ContenedorTextos, h2{
+    color: black;
+    font-weight: bold;
+    background-color: #709ba3;
+}
 /*              Responsive                     */
 @media (max-width: 768px){
     main {
