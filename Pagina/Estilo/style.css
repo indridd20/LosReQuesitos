@@ -34,7 +34,7 @@ main  {
     z-index: 2;
 }
 
-.ContenedorTextos, h2{
+.ContenedorTextos h2{
     color: black;
     font-weight: bold;
     background-color: #709ba3;
