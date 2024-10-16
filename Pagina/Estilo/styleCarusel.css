@@ -3,7 +3,28 @@ a{
     text-decoration: none;
 }
 
-.Carousel{
+.slider {
+    z-index: 0;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slider-slide img {
     width: 100%;
     margin-left: 1%;
     margin-top: 50px;
