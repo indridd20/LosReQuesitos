@@ -4,6 +4,7 @@ body {
 }
 
 .slider {
+    z-index: 0;
     position: relative;
     max-width: 600px;
     margin: auto;
