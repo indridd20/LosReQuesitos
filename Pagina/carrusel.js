@@ -1,18 +1,40 @@
-let slideIndex = 0;
+function App() {}
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slider-slide');
-    const totalSlides = slides.length;
+window.onload = function (event) {
+    var app = new App();
+    window.app = app;
+};
 
-    if (index >= totalSlides) slideIndex = 0;
-    if (index < 0) slideIndex = totalSlides - 1;
+App.prototype.processingButton = function(event) {
+    const btn = event.currentTarget;
+    const slickList = event.currentTarget.parentNode;
+    const track = event.currentTarget.parentNode.querySelector('#track');
+    const slick = track.querySelectorAll('.slick');
 
-    const offset = -slideIndex * 100;
-    document.querySelector('.slider-container').style.transform = `translateX(${offset}%)`;
+    const slickWidth = slick[0].offsetWidth;
+    
+    const trackWidth = track.offsetWidth;
+    const listWidth = slickList.offsetWidth;
+
+    track.style.left == ""  ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0, -2) * -1);
+
+    btn.dataset.button == "button-prev" ? prevAction(leftPosition,slickWidth,track) : nextAction(leftPosition,trackWidth,listWidth,slickWidth,track)
 }
 
-function moveSlide(step) {
-    showSlide(slideIndex + step);
+let prevAction = (leftPosition,slickWidth,track) => {
+    if(leftPosition > 0) {
+        console.log("entro 2")
+        track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
+    }
 }
 
-showSlide(slideIndex); // Mostrar la primera imagen al cargar
+let nextAction = (leftPosition,trackWidth,listWidth,slickWidth,track) => {
+    if(leftPosition < (trackWidth - listWidth)) {
+        track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
+    }
+}
+
+
+
+
+
