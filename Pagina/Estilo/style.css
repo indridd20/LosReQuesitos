@@ -7,15 +7,18 @@
     font-style: normal;
 }
 
-main {
-    padding-top: 50px;
+main::after{
+    padding: 50px 0;
+    margin: 0;
     position: relative;
+    width: 100%;
     min-height: calc(100vh - 160px);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-image: url(https://cadenacentro.com/wp-content/uploads/2021/11/f800x450-186650_238096_5050.jpg);
+    z-index: 2;
 }
 
 main::before {
@@ -29,14 +32,8 @@ main::before {
 
 }
 
-main  {
-    position: relative;
-    z-index: 2;
-}
-
-.ContenedorTextos h2{
+.ContenedorTextos{
     color: black;
-    font-weight: bold;
     background-color: #709ba3;
 }
 /*              Responsive                     */
@@ -74,71 +71,71 @@ main  {
     font-size: 13px;
 }
 
+/*          En que afecta esto?
+    .bar {
+        position: relative;
+        top: 50px;
+        left: 90px;
+        
+    }
+    .barrita {
+        width: 300px;
+        height: 25px;
+        border-radius: 20px;
+    }
+
+    .botonbuscar {
+        width: 100px;
+        height: 25px;
+        border-radius: 10px;
+        background: #c2f8fa;
+        color: rgb(0, 0, 0);
+    }
+
+    .search-bar {
+        position: relative;
+        top: 25px;
+        left: 210px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        margin-right: 8px;
+        width: 320px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        padding: 8px 12px;
+        background-color: #171717;
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .botonbuscar:hover {
+        background-color:#003264;
+        color: #000000;
+    }
+
+    form{
+        display: grid;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
 
 
-.bar {
-    position: relative;
-    top: 50px;
-    left: 90px;
-    
-}
-.barrita {
-    width: 300px;
-    height: 25px;
-    border-radius: 20px;
-}
-
-.botonbuscar {
-    width: 100px;
-    height: 25px;
-    border-radius: 10px;
-    background: #c2f8fa;
-    color: rgb(0, 0, 0);
-}
-
-.search-bar {
-    position: relative;
-    top: 25px;
-    left: 210px;
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    margin-right: 8px;
-    width: 320px;
-    font-size: 14px;
-}
-
-.search-bar button {
-    padding: 8px 12px;
-    background-color: #171717;
-    color: #fff;
-    border: none;
-    border-radius: 40px;
-    width: 100px;
-    height: 30px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.botonbuscar:hover {
-    background-color:#003264;
-    color: #000000;
-}
-
-form{
-    display: grid;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-
-
-.fondo-turno{
-    margin-left: 5%;
-}
+    .fondo-turno{
+        margin-left: 5%;
+    }
+*/

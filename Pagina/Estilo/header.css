@@ -5,6 +5,7 @@
 }
 
 header  {
+    top: 0;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -79,6 +80,36 @@ Pagina\Img\Header\IconoMenu.png
     height: 40px;
     margin-left: 5px; /* Mueve la imagen a la derecha del texto */
 }
+/* Botones Navbar */
+.BotonesNavbar {
+    display: flex;
+    justify-content: space-between; /* Distribuir los botones uniformemente */
+    background-color: #003851; /* Color de fondo de la barra */
+    padding: 10px 50px; /* Ajusta el padding a tu gusto */
+}
+
+.BotonesNavbar button {
+    background-color: #003851; /* Color del botón */
+    color: white; /* Texto blanco */
+    border: none; /* Quita los bordes */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+
+.BotonesNavbar a {
+    color: white; /* Mantén el texto del link blanco */
+    text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+.BotonesNavbar button a {
+    display: block;
+    width: 100%; /* Hacer que el link ocupe todo el botón */
+    height: 100%;
+    text-align: center; /* Centrar el texto en el botón */
+}
+
 
 @media (max-width: 992px) {
     .search-form {
