@@ -32,10 +32,7 @@ main::before {
 
 }
 
-.ContenedorTextos{
-    color: black;
-    background-color: #709ba3;
-}
+
 /*              Responsive                     */
 @media (max-width: 768px){
     main {
