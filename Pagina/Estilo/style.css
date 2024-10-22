@@ -7,8 +7,8 @@
     font-style: normal;
 }
 
-main::after{
-    padding: 50px 0;
+main{
+    padding-top: 50px;
     margin: 0;
     position: relative;
     width: 100%;
@@ -29,8 +29,8 @@ main::before {
     right: 0;
     bottom: 0;
     background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
-
 }
+
 
 
 /*              Responsive                     */
