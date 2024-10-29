@@ -7,6 +7,11 @@
     font-style: normal;
 }
 
+body {
+    margin: 0;
+    width: 100%;
+}
+
 main{
     padding-top: 50px;
     margin: 0;
@@ -67,6 +72,7 @@ main::before {
     border: 10px;
     font-size: 13px;
 }
+
 
 /*          En que afecta esto?
     .bar {
