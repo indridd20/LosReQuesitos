@@ -6,6 +6,15 @@
     font-weight: 700;
     font-style: normal;
 }
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
+}
 
 body {
     margin: 0;
@@ -26,15 +35,6 @@ main{
     z-index: 2;
 }
 
-main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
-}
 
 
 
@@ -142,3 +142,27 @@ main::before {
         margin-left: 5%;
     }
 */
+
+p{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h1{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h2{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
