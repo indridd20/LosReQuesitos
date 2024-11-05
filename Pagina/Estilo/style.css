@@ -15,14 +15,9 @@ main::before {
     bottom: 0;
     background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
 }
-
-body {
-    margin: 0;
-    width: 100%;
-}
-
+Pagina\Img\Fondo.jpg
 main{
-    padding-top: 50px;
+    padding-top: 150px;
     margin: 0;
     position: relative;
     width: 100%;
@@ -31,7 +26,7 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url(https://cadenacentro.com/wp-content/uploads/2021/11/f800x450-186650_238096_5050.jpg);
+    background-image: url(Pagina\Img\Fondo.jpg);
     z-index: 2;
 }
 
