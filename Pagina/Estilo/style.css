@@ -6,6 +6,37 @@
     font-weight: 700;
     font-style: normal;
 }
+<<<<<<< HEAD
+=======
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+main{
+    padding-top: 50px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 160px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(https://cadenacentro.com/wp-content/uploads/2021/11/f800x450-186650_238096_5050.jpg);
+    z-index: 2;
+}
+>>>>>>> parent of bd9ac96 (...)
 
 
 

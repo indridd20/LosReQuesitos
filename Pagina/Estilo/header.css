@@ -1,3 +1,9 @@
+*   {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 header  {
     top: 0;
     position: fixed;
@@ -97,38 +103,21 @@ Pagina\Img\Header\IconoMenu.png
     text-decoration: none; /* Quitar el subrayado del enlace */
 }
 
-/* Botones Navbar - solo visibles en dispositivos móviles */
-.BotonesNavbar {
-    display: none; /* Oculto en vista de escritorio */
+.BotonesNavbar button a {
+    display: block;
+    width: 100%; /* Hacer que el link ocupe todo el botón */
+    height: 100%;
+    text-align: center; /* Centrar el texto en el botón */
 }
 
+
 @media (max-width: 992px) {
-    /* Mostrar los botones solo en dispositivos móviles */
-    .BotonesNavbar {
-        display: flex;
-        flex-direction: column; /* Coloca los botones en una columna */
+    .search-form {
         width: 100%;
-        padding-top: 10px; /* Espacio entre los botones y la barra de búsqueda */
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: nowrap; /* Asegura que los elementos se mantengan en una línea */
     }
-
-    .BotonesNavbar button {
-        background-color: #003851;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin-bottom: 10px; /* Espacio entre botones */
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        width: 100%; /* Ancho completo para cada botón */
-    }
-
-    .BotonesNavbar button a {
-        color: white;
-        text-decoration: none;
-        display: block;
-    }
-
 
     .navbar-collapse {
         display: flex;
