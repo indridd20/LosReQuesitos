@@ -5,9 +5,9 @@
     font-family: Poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
+    
 }
-<<<<<<< HEAD
-=======
+
 main::before {
     content: "";
     position: absolute;
@@ -21,9 +21,12 @@ main::before {
 body {
     margin: 0;
     width: 100%;
+    
 }
 
 main{
+    background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
+
     padding-top: 50px;
     margin: 0;
     position: relative;
@@ -36,7 +39,6 @@ main{
     background-image: url(https://cadenacentro.com/wp-content/uploads/2021/11/f800x450-186650_238096_5050.jpg);
     z-index: 2;
 }
->>>>>>> parent of bd9ac96 (...)
 
 
 
@@ -204,7 +206,6 @@ section {
 main::before {
     content: "";
     position: absolute;
-
     background: linear-gradient(to bottom, #e0e4e4c9, #709ba3);
 }
 .servicios{
@@ -219,4 +220,10 @@ main::before {
     background-position: center;
     background-image: url(../Img/Fondo.jpg);
     z-index: 2;
+}
+
+.HML{
+    padding-top: 100px;
+    text-align: center;
+    color: blue
 }
